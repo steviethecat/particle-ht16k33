@@ -25,8 +25,8 @@ void setup() {
 
 void loop() {
     uint8_t codes[2];
-    code[0] = NUMBER_CODES[number / 10];
-    code[1] = NUMBER_CODES[number % 10];
+    codes[0] = NUMBER_CODES[number / 10];
+    codes[1] = NUMBER_CODES[number % 10];
     driver.writeDisplay(codes, 0, sizeof(codes));
     number++;
     if (number >= 100) {
